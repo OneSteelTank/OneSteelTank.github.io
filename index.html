@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Portfolio</title>
+    <style>
+        :root {
+            --bg-primary: #F8FAF9;
+            --bg-surface: #FFFFFF;
+            --green-racing: #004225;
+            --green-emerald: #046A38;
+            --green-tint: #EBF3EF;
+            --text-main: #18221D;
+            --text-muted: #4A5851;
+            --border-subtle: #D5E0DA;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        header {
+            background-color: var(--green-racing);
+            color: #FFFFFF;
+            padding: 3rem 1.5rem;
+            border-bottom: 4px solid var(--green-emerald);
+        }
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2.5rem;
+            font-size: 0.95rem;
+        }
+
+        .site-title {
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            color: #C2D9CE;
+        }
+
+        .nav-links a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.2s ease;
+        }
+
+        .nav-links a.active,
+        .nav-links a:hover {
+            border-bottom-color: #FFFFFF;
+        }
+
+        header h1 {
+            font-size: 2.25rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.5rem;
+        }
+
+        header p.subtitle {
+            color: #D2E3DB;
+            font-size: 1.1rem;
+            font-weight: 400;
+        }
+
+        main {
+            padding: 3rem 1.5rem;
+        }
+
+        .card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            border-radius: 6px;
+            padding: 2.5rem;
+            box-shadow: 0 2px 8px rgba(0, 66, 37, 0.04);
+        }
+
+        h2 {
+            color: var(--green-racing);
+            font-size: 1.35rem;
+            margin-bottom: 1.25rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border-subtle);
+        }
+
+        .bio-text p {
+            margin-bottom: 1.25rem;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .bio-text p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            gap: 1.25rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-subtle);
+        }
+
+        .highlight-box {
+            background-color: var(--green-tint);
+            padding: 1.15rem;
+            border-left: 3px solid var(--green-emerald);
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight-box h3 {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: var(--green-racing);
+            margin-bottom: 0.4rem;
+        }
+
+        .highlight-box p {
+            font-size: 0.92rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            font-size: 0.875rem;
+            color: var(--text-muted);
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 2rem 1.25rem;
+            }
+            .card {
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 1.85rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <span class="site-title">Portfolio</span>
+                <div class="nav-links">
+                    <a href="index.html" class="active">About Me</a>
+                    <!-- Add future links here as you build out the site -->
+                    <!-- <a href="projects.html">Projects</a> -->
+                    <!-- <a href="contact.html">Contact</a> -->
+                </div>
+            </nav>
+            <h1>[Your Full Name]</h1>
+            <p class="subtitle">Computer Science Undergraduate &amp; Software Developer</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="card" aria-labelledby="about-heading">
+                <h2 id="about-heading">About Me</h2>
+                
+                <div class="bio-text">
+                    <p>
+                        I am an undergraduate student pursuing a degree in Computer Science at [University Name], where my coursework focuses on low-level systems programming in C—including memory management, pointers, and recursion—alongside foundational studies in macroeconomics and technical communication. My academic training emphasizes writing clean, efficient, and well-documented code to solve structured analytical problems.
+                    </p>
+                    <p>
+                        Alongside my studies, I work independently as a delivery driver for DoorDash, a role that has strengthened my time management, route optimization, and adaptability under tight schedules. Balancing self-directed work with a full course load has reinforced my reliability, customer communication skills, and ability to evaluate operational efficiency in real time.
+                    </p>
+                    <p>
+                        Outside the classroom, I build practical, self-hosted software tools and automation workflows. My technical capabilities include Python, JavaScript, Node.js, PostgreSQL, Linux server administration, and Docker containerization—demonstrated through personal projects such as custom browser extensions for media analytics and self-hosted study applications. Additionally, I am proficient in Spanish at an intermediate level and actively study Mandarin Chinese, bringing cross-cultural communication skills and disciplined independent learning to collaborative technical environments.
+                    </p>
+                </div>
+
+                <div class="highlights-grid">
+                    <div class="highlight-box">
+                        <h3>Education</h3>
+                        <p>B.S. in Computer Science<br>Focus: C Programming, Data Structures, Macroeconomics</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h3>Technical Stack</h3>
+                        <p>C, Python, JavaScript, Node.js, PostgreSQL, Docker, Linux, Git</p>
+                    </div>
+                    <div class="highlight-box">
+                        <h3>Languages &amp; Strengths</h3>
+                        <p>English (Native), Spanish (Intermediate), Mandarin (Elementary), Logistics</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 [Your Full Name]. Hosted via GitHub Pages.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
